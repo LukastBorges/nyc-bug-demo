@@ -1,0 +1,26 @@
+{
+  "name": "nyc-bug-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-google": "^0.13.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1",
+    "sinon": "^7.3.2"
+  },
+  "nyc": {
+    "all": true,
+    "exclude": [
+      "test/**/*_test.js",
+      "src/**/factory.js",
+      "index.js"
+    ],
+    "include": [
+      "src/**/*.js"
+    ]
+  }
+}
